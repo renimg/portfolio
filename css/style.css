@@ -121,6 +121,7 @@ img {
 }
 
 .tabcontent h1 img {
+    margin:0;
         margin-right: 1.5rem;
          max-width: 7%;
 }
