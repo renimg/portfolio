@@ -30,7 +30,7 @@ html {
 }
 
 img {
-    max-width: 100%;
+    max-width: 30%;
     display: block;
 }
 
@@ -86,7 +86,6 @@ img {
     align-items: center;
     font-size: 1rem;
     margin-top: 3rem;
-    padding: 0 12rem;
     border: 0.25rem solid var(--buttonhovercolor);
     border-top: none;
     
@@ -99,7 +98,19 @@ img {
     margin: 0;
     margin-bottom: 1.3rem;
 }
-
+.tabcontent h3{
+    display: flex;
+    padding-right: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 1.3rem;
+}
+.tabcontent img {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+}
 .tabcontent p {
     font-size: 1.4rem;
     text-align: center;
@@ -122,4 +133,11 @@ img {
     .sidenav a {
         font-size: 18px;
     }
+}
+
+.box{
+    margin:0;
+    padding:0;
+    width:100vw;
+    background-color: rgba(255, 255, 255, 0.75);
 }
