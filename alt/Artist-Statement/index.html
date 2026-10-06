@@ -4,30 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan / Kimberly Smith's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Jordan/Kimberly | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Silkscreen:wght@400;700&family=Sixtyfour&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<nav class="tab">
-    <button class="tablinks" onclick="openContent(event,'home')">Home</button>
-    <button class="tablinks" onclick="openContent(event,'statement')">Artist Statement</button>
-    <button class="tablinks" onclick="openContent(event,'portfolio')">Portfolio</button>
-</nav>
 
 <body>
-    <div id='home' class="tabcontent">
-        <h1><img src="img/snowflakelogo.png" alt="Snow Flake Logo">Portfolio of Jordan/Kimberly Smith</h1>
-        <p>
-            things todo: <br>
-            add posters from evc art035 (art-74 equiv, midterm and final) <br>
-            add game made for art-101 (final) <br>
-            add link to website designed for art-109 <br>
-            add some work from art-15 so far <br>
-        </p>
-    </div>
-
-    <div id='statement' class="tabcontent">
-        <h1>Artist Statement</h1>
-        <p>As a kid I've always held a deep fascination with art, but the world I was born into seemed all too eager in
+    <header class="flex-container">
+        <nav>
+            <div class="box">
+                <button class="hamburger">☰</button>
+                <ul class="nav-menu">
+                    <li> <a href="../">Home</a></li>
+                    <li> <a href="#">Artist Statement</a></li>
+                    <li> <a href="../Portfolio/">Portfolio</a></li>
+                    <li> <a href="../Portfolio/#3d-work">3D Models</a></li>
+                    <li> <a href="../Portfolio/#2d-work">2D Works</a></li>
+                    <li> <a href="../Portfolio/#p5-work">P5/Q5 Creations</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>
+            <a href="../"><img src="../img/snowflakelogo.png" alt="Snowflake on a circle background"> Jordan / Kimberly Smith</a>
+            <div class="sizechange">(He/She/They)</div>
+        </h1>
+    </header>
+    <main>
+        <section class="about-section" id="Artist Statement">
+            <div class="about-content">
+                <h2><img src="../img/snowflakelogo.png" alt="Snowflake on a circle background">Artist Statement</h2>
+                <p>        <p>As a kid I've always held a deep fascination with art, but the world I was born into seemed all too eager in
             trying to stop me from persuing the arts at all costs. Most of my early artworks from Middle School were Fs,
             all thanks to my art teacher's religious views on left handed people. My parents would attempt to dissuade
             my artistic passion and try to coax me into being their sweet lil famous Basketball player. And when I
@@ -53,29 +64,20 @@
             Even though the world isn't done trying to keep me from pursuing my love for art, with my vision in a
             constant superpositon between functional and total blindness, I'm still going to persue the world of art.
         </p>
-    </div>
-    <div id='portfolio' class="tabcontent">
-        <h1>Portfolio</h1>
-        <a href="img/iconrender_v2.png"><img id="myImg" src="img/iconrender_v2.png" alt="Render"></a>
-        <h3>Find A Way Out (2025)</h3>
-        <div class="box">
-            <p>
-                Created for my final for ART-75, a scene inspired heavily by point & click adventure games and the
-                Windows
-                95 maze screensaver. This was rendered out in Blender and utilized appropriate 90s era stock photos and
-                techniques to get the design & feel of a late 90s computer game. Everything from the text, to the mouse
-                cursor was modeled and rendered in Blender to be able to move them around freely while setting the
-                scene. <br>
-                Much like my inspiration, I tried to source accurate early-to-mid 90s stock textures, more specifically
-                ones that were either bundled with SGI workstations, or sold commercially via texture asset CDs. The
-                only exception being the Rubik's Cube, which is textured via solid colors, and the image that appears on
-                the visible CRT monitor, which was drawn by hand.
-                <br>
-                <br>
-            </p>
+            </div>
+        </section>
+    </main>
+    <footer class="flex-container">
+        <p>
+            &copy;2026 Jordan/Kimberly Smith
+        </p>
+        <div class="social-links">
+            <a href="https://renimg.bsky.social"><img src="../img/icon-logo-bsky.png" alt=""></a>
+            <a href="https://youtube.com/@RenimG"><img src="../img/icon-logo-youtube.png" alt=""></a>
         </div>
-    </div>
+    </footer>
+    <script src="../js/nav.js"></script>
+    <script src="../js/main.js"></script>
 </body>
-<script src="js/main.js"></script>
 
 </html>

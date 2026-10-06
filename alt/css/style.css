@@ -1,0 +1,553 @@
+/* color palettes */
+
+:root {
+    --HeaderColor1: #ae78ff;
+    --HeaderColor2: #e1a3ff;
+    --HeaderColor1hover: #c69cff;
+    --HeaderColor2hover: #eabfff;
+    --TextColor1: #f6f4fb;
+    --TextColor2: #ded5ff;
+    --OutlineColor: #1e2264;
+    --OutlineColorhover: #3036a0;
+    --BG1: #fe87b5;
+    --BG2: #ffd2d17e;
+    --BG3: #ffd2d1;
+    --bgGradient: linear-gradient(0deg, var(--HeaderColor1) 50%, var(--HeaderColor2) 50%);
+    --bgGradient2: linear-gradient(45deg, var(--HeaderColor1) 50%, var(--HeaderColor2) 50%);
+    --bgGradient2hover: linear-gradient(45deg, var(--HeaderColor1hover) 50%, var(--HeaderColor2hover) 50%);
+    --bgGradient3: linear-gradient(45deg, var(--BG1) 50%, var(--BG3) 50%);
+}
+
+
+/* CSS resets */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.1s ease;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* general CSS */
+a {
+    paint-order: stroke fill;
+    color: var(--OutlineColor);
+    -webkit-text-stroke: 0.3rem var(--TextColor2);
+}
+
+/* ---------------------- Header ----------------------  */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: var(--OutlineColor) 0.25rem solid;
+    background: #AE78FF;
+    background: var(--bgGradient);
+}
+
+header h1 {
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 2.25rem;
+    color: var(--TextColor1);
+    /* -webkit-background-clip: text;
+    background-clip: text; */
+    /* -webkit-text-stroke: 0.75rem var(--OutlineColor);
+    -webkit-text-stroke-color: var(--OutlineColor); */
+}
+
+.sizechange {
+    color: var(--TextColor2);
+    -webkit-text-stroke: 0.5rem var(--OutlineColor);
+    margin: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-shadow: var(--OutlineColor) 0px 0px 0.2rem, var(--OutlineColor) 0px 0px 0.4rem, var(--OutlineColor) 0px 0px 0.6rem, #FF2D95 0px 0px 0.8rem, #FF2D95 0px 0px 1rem, #FF2D95 0px 0px 1.2rem, #FF2D95 0px 0px 1.4rem, #FF2D95 0px 0px 1.6rem; */
+}
+
+header h1 a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--TextColor1);
+    -webkit-text-stroke: 0.5rem var(--OutlineColor);
+}
+
+header h1 a:hover {
+    color: var(--TextColor2)
+}
+
+@media (max-width:1550px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header .sizechange {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width:900px) {
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    header .sizechange {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    header .sizechange {
+        font-size: 0.75rem;
+    }
+}
+
+header h1 img {
+    max-width: 6.25%;
+    padding-right: 1.2rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    header h1 img {
+        max-width: 8%;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    header h1 img {
+        max-width: 10%;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 img {
+        max-width: 12%;
+        padding-right: 1rem;
+    }
+}
+
+/* ---------------------- End Header ----------------------  */
+
+/* ---------------------- Body/main ----------------------  */
+body {
+    background-color: var(--BG1);
+    color: var(--TextColor1);
+    font-family: "Silkscreen", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.5rem var(--OutlineColor);
+}
+
+@media (max-width:850px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+main p {
+    text-align: center;
+}
+
+main {
+    margin: 1rem;
+}
+
+@media (max-width: 1200px) {
+    main {
+        margin: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        margin: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+    main {
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width:400) {
+    main {
+        margin: 0.25rem;
+    }
+}
+
+/* ---------------------- End Body ----------------------  */
+/* ---------------------- Nav ----------------------  */
+nav {
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+    z-index: 100;
+
+}
+
+nav .box {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-image: var(--bgGradient3);
+    border: var(--OutlineColor) 0.25rem solid;
+    width: auto;
+    height: auto;
+}
+
+nav a {
+    color: var(--TextColor1);
+    -webkit-text-stroke: 0.3rem var(--OutlineColor);
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    color: var(--TextColor2)
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.nav-menu {
+    display: block;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+}
+
+@media(max-width:1230px) {
+    nav .box {
+        background-image: none;
+        border: transparent;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    nav .box.active {
+        transition: none;
+        background-image: var(--bgGradient3);
+        border: var(--OutlineColor) 0.25rem solid;
+    }
+}
+
+/* ---------------------- End Nav ----------------------  */
+/* ---------------------- Sections ----------------------  */
+
+.about-section,
+.portfolio-section,
+.contact-section,
+.project-section {
+    margin-bottom: 5rem;
+    background-color: var(--BG2);
+}
+
+.about-content p {
+    margin: 0 7rem;
+    line-height: 2rem;
+}
+
+@media (max-width: 900px) {
+    .about-content p {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-content p {
+        margin: 0 3rem;
+    }
+}
+
+.about-content img {
+    max-width: 6.25%;
+    padding-right: 1.2rem;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .about-content img {
+        max-width: 8%;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-content img {
+        max-width: 10%;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-content img {
+        max-width: 12%;
+        padding-right: 1rem;
+    }
+}
+
+.about-content,
+.portfolio-content,
+.contact-content,
+.project-content {
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 2rem 0;
+}
+
+@media (max-width: 900px) {
+
+    .about-content,
+    .portfolio-content,
+    .contact-content,
+    .project-content {
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .about-content,
+    .portfolio-content,
+    .contact-content,
+    .project-content {
+        padding-right: 0.75rem;
+    }
+}
+
+.about-content h2,
+.portfolio-content h2,
+.contact-content h2,
+.project-content h2 {
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+@media (max-width:1550px) {
+
+    .about-content h2,
+    .portfolio-content h2,
+    .contact-content h2,
+    .project-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:900px) {
+
+    .about-content h2,
+    .portfolio-content h2,
+    .contact-content h2,
+    .project-content h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width:600px) {
+
+    .about-content h2,
+    .portfolio-content h2,
+    .contact-content h2,
+    .project-content h2 {
+        font-size: 1rem;
+    }
+}
+
+/* ---------------------- End Sections ----------------------  */
+/* ---------------------- Sections ----------------------  */
+/* ---------------------- Portfolio Img ----------------------  */
+
+.portfolio-item {
+    opacity: 1;
+    background: var(--bgGradient2);
+    border: var(--OutlineColor) 0.25rem solid;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    border-radius: 1rem;
+}
+
+.portfolio-item:hover {
+    background: var(--bgGradient2hover);
+        border: var(--OutlineColorhover) 0.25rem solid;
+}
+
+.portfolio-item img:hover {
+    opacity: 0.8;
+}
+.project-item {
+    background: var(--bgGradient2);
+    border: var(--OutlineColor) 0.25rem solid;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    line-height: 2rem;
+}
+
+.project-item img {
+    display: inline;
+    max-width: 49%;
+}
+
+@media (max-width: 902px) {
+    .project-item img {
+        display: flex;
+    }
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: var(--TextColor1);
+    -webkit-text-stroke: 0.5rem var(--OutlineColor);
+}
+
+@media (max-width: 850px) {
+    .portfolio-item {
+        padding: 0.5rem;
+    }
+}
+
+.portfolio-item h3 {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.portfolio-item p {
+    /* text-align: justify; */
+}
+
+.portfolio-item img {
+    display: inline;
+    /* max-width: 48%; */
+    padding-bottom: 2rem;
+    filter: drop-shadow(-1.125rem 1rem 0.75rem #00000080)
+}
+
+@media (max-width:950px) {
+    .portfolio-item img {
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+@media (max-width:700px) {
+    .portfolio-item img {
+        max-width: 47%;
+        padding-bottom: 1rem;
+    }
+}
+
+.portfolio-item h3 {
+    margin: 1.5rem 0;
+    padding: 1rem;
+}
+
+/* ---------------------- End Portfolio Img ----------------------  */
+/* ---------------------- Content/footer ----------------------  */
+.contact-content p {
+    margin: 1rem;
+    text-align: left;
+}
+
+footer {
+    margin: 1rem;
+    text-align: right;
+    padding: 0 1rem;
+}
+
+footer img {
+    display: inline;
+    max-width: 3rem;
+    margin: 0 0.5rem;
+}
+
+/* ---------------------- End Content/Footer ----------------------  */
+/* ---------------------- Flex Start ----------------------  */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container-grid {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.flex-item-grid {
+    justify-content: space-between;
+    flex: 1 1 22rem;
+}
+
+.flex-item-grid2 {
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 1 19rem;
+}
+
+.hidden {
+    display: none;
+}
