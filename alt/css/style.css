@@ -50,7 +50,7 @@ html {
 }
 
 header {
-    padding: 3rem;
+    padding: 3rem 1rem;
     margin-bottom: 3rem;
     border-bottom: var(--OutlineColor) 0.25rem solid;
     background: #AE78FF;
@@ -82,7 +82,7 @@ header h1 a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     text-decoration: none;
     color: var(--TextColor1);
     -webkit-text-stroke: 0.5rem var(--OutlineColor);
@@ -122,30 +122,23 @@ header h1 a:hover {
     }
 }
 
-header h1 img {
-    max-width: 6.25%;
-    padding-right: 1.2rem;
-    padding-bottom: 1.5rem;
-}
-
-@media (max-width: 1200px) {
-    header h1 img {
-        max-width: 8%;
-        padding-right: 1rem;
-    }
+@media (max-width: 1460px) {
+    /* header h1 img {
+        padding-right: 21rem;
+    } */
 }
 
 @media (max-width: 900px) {
     header h1 img {
-        max-width: 10%;
-        padding-right: 1rem;
+        /* max-width: 10%;
+        padding-right: 1rem; */
     }
 }
 
 @media (max-width: 600px) {
     header h1 img {
-        max-width: 12%;
-        padding-right: 1rem;
+        /* max-width: 12%;
+        padding-right: 1rem; */
     }
 }
 
@@ -231,7 +224,7 @@ nav a {
     color: var(--TextColor1);
     -webkit-text-stroke: 0.3rem var(--OutlineColor);
     text-decoration: none;
-    display: inline-block;
+    display: block;
     margin: 0 1rem;
 }
 
@@ -243,6 +236,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
 }
+
 
 .hamburger {
     display: none;
@@ -256,11 +250,10 @@ nav a:hover {
 .nav-menu {
     display: block;
     list-style: none;
-    align-items: center;
-    justify-items: center;
+    justify-items: right;
 }
 
-@media(max-width:1230px) {
+@media(max-width:1460px) {
     nav .box {
         background-image: none;
         border: transparent;
@@ -427,12 +420,35 @@ nav a:hover {
 
 .portfolio-item:hover {
     background: var(--bgGradient2hover);
-        border: var(--OutlineColorhover) 0.25rem solid;
+    border: var(--OutlineColorhover) 0.25rem solid;
 }
 
-.portfolio-item img:hover {
+.home-item {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    opacity: 1;
+    background: var(--bgGradient2);
+    border: var(--OutlineColor) 0.25rem solid;
+    font-size: 3rem;
+    border-radius: 1rem;
+}
+
+.home-item:hover {
+    background: var(--bgGradient2hover);
+    border: var(--OutlineColorhover) 0.25rem solid;
+}
+
+.home-item img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-item img:hover {
     opacity: 0.8;
 }
+
 .project-item {
     background: var(--bgGradient2);
     border: var(--OutlineColor) 0.25rem solid;
