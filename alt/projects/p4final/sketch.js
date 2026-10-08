@@ -1,4 +1,5 @@
 await Canvas(1600,900);
+displayMode(CENTER, SMOOTH, 0.8);
 var mgr
 mgr = new SceneManager();
 mgr.addScene (preloads);
@@ -93,7 +94,6 @@ function intro()  {
 		playButton.img = playbtn
 		aboutButton.img = abtbtn
         console.log("We are at entering scene1");
-      background('blue');
       textAlign(CENTER);
       textSize(29);
     }
