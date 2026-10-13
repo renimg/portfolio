@@ -499,6 +499,23 @@ nav a:hover {
     filter: drop-shadow(-1.125rem 1rem 0.75rem #00000080)
 }
 
+.project-item h3 {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.project-item p {
+    text-align: center;
+}
+
+.project-item img {
+    display: inline;
+    max-width: 100%;
+    padding-bottom: 2rem;
+    filter: drop-shadow(-1.125rem 1rem 0.75rem #00000080)
+}
+
 @media (max-width:950px) {
     .portfolio-item img {
         padding-bottom: 0.5rem;
