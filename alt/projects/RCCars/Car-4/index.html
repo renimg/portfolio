@@ -10,8 +10,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Silkscreen:wght@400;700&family=Sixtyfour&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="../../../css/baguetteBox.css">
     <link rel="stylesheet" href="../../../css/style.css">
+    <script src="../../../js/baguetteBox.js"></script>
+    <style>
+        .project-item:hover {
+            background: var(--bgGradient2hover);
+            border: var(--OutlineColorhover) 0.25rem solid;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,15 +27,18 @@
             <div class="box">
                 <button class="hamburger">☰</button>
                 <ul class="nav-menu">
-                    <li> <a href="../../../#about">About</a></li>
-                    <li> <a href="../../../#portfolio">Portfolio</a></li>
-                    <li> <a href="../../../#contact">Contact</a></li>
+                    <li> <a href="../../../">Home</a></li>
+                    <li> <a href="../../../Artist-Statement/">Artist Statement</a></li>
+                    <li> <a href="../../../Portfolio/">Portfolio</a></li>
+                    <li> <a href="../../../Portfolio/#3d-work">3D Models</a></li>
+                    <li> <a href="../../../Portfolio/#2d-work">2D Works</a></li>
+                    <li> <a href="../../../Portfolio/#p5-work">P5 & Q5 Creations</a></li>
+                    <li> <a href="../../../Portfolio/#video-work">Videos & Animations</a></li>
                 </ul>
             </div>
         </nav>
         <h1>
-            <a href="../../../"><img src="../../../img/snowflakelogo.png" alt="Snowflake on a circle background"> Jordan / Kimberly Smith</a>
-            <div class="sizechange">(He/She/They)</div>
+            <a href="../../../"><img src="../../../img/branding.png" alt="Snowflake on a circle background"></a>
         </h1>
     </header>
     <main>
@@ -37,18 +47,42 @@
                 <h2>Robo Companion (Tentative Name)</h2>
                 <div class="flex-container-grid">
                     <div class="project-item flex-item-grid">
-                        <img src="../../../img/rcangle1.png" alt="3D modeled tradional RC Car at a front-left angle">
-                        <img src="../../../img/rcangle2.png" alt="3D modeled tradional RC Car at a back-right angle">
+                        <a href="../../../img/rcangle1.png"><img src="../../../img/rcangle1.png"
+                                alt="3D modeled tradional RC Car at a front-left angle"></a>
+                        <a href="../../../img/rcangle2.png"><img src="../../../img/rcangle2.png"
+                                alt="3D modeled tradional RC Car at a back-right angle"></a>
                         <p>
-                            Created for future use in my personal game development project internally called "HI//VOLTAGE", an RC Car racing game heavily inspired by Yu-Gi-Oh. <br>
-                            Robo Companion (Placeholder Name) is inspired color-palette wise by one of my friends who likes black, purple, and blue. Trying to create a livery based around his interests. <br>
+                            Created for future use in my personal game development project internally called
+                            "HI//VOLTAGE", an RC Car racing game heavily inspired by Yu-Gi-Oh. <br>
+                            Robo Companion (Placeholder Name) is inspired color-palette wise by one of my friends who
+                            likes black, purple, and blue. Trying to create a livery based around his interests. <br>
                             Created using Blender and Adobe's Substance Painter
                         </p>
                     </div>
                 </div>
             </div>
-
-
+        </section>
+        <section class="portfolio-section">
+            <div class="portfolio-content">
+                <h2>Extra Images</h2>
+                <div class="flex-container-grid">
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="img/top.png"><img src="img/top.png" alt="Top Down Image of an RC Car"></a>
+                        <a href="img/render.png"><img src="img/render.png"
+                                alt="3D modeled tradional RC Car at a front-left angle"></a>
+                        <a href="img/render2.png"><img src="img/render2.png"
+                                alt="3D modeled tradional RC Car at a back-right angle"></a>
+                        <a href="img/textures.png"><img src="img/textures.png" alt="RC Car Textures"></a>
+                        <p>
+                            Created for future use in my personal game development project internally called
+                            "HI//VOLTAGE", an RC Car racing game heavily inspired by Yu-Gi-Oh. <br>
+                            Robo Companion (Placeholder Name) is inspired color-palette wise by one of my friends who
+                            likes black, purple, and blue. Trying to create a livery based around his interests. <br>
+                            Created using Blender and Adobe's Substance Painter
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="contact-section" id="contact">
             <div class="contact-content">
@@ -70,6 +104,9 @@
     </footer>
     <script src="../../../js/nav.js"></script>
     <script src="../../../js/main.js"></script>
+    <script>
+        baguetteBox.run(".flex-container-grid", { captions: true })
+    </script>
 </body>
 
 </html>

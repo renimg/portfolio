@@ -44,6 +44,11 @@ a {
     -webkit-text-stroke: 0.3rem var(--TextColor2);
 }
 
+.hidden {
+    display: none;
+}
+
+
 /* ---------------------- Header ----------------------  */
 html {
     scroll-behavior: smooth;
@@ -488,13 +493,10 @@ nav a:hover {
     font-size: 1.5rem;
 }
 
-.portfolio-item p {
-    /* text-align: justify; */
-}
 
 .portfolio-item img {
     display: inline;
-    /* max-width: 48%; */
+    max-width: 24%;
     padding-bottom: 2rem;
     filter: drop-shadow(-1.125rem 1rem 0.75rem #00000080)
 }
@@ -542,7 +544,6 @@ footer img {
 .flex-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .flex-container-grid {
@@ -561,9 +562,44 @@ footer img {
 .flex-item-grid2 {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     flex: 1 1 19rem;
 }
 
-.hidden {
-    display: none;
+/* ---------------------- Flex End ----------------------  */
+/* ---------------------- Box Start ----------------------  */
+
+.img-comp-container {
+    position: relative;
+    flex-direction: row;
+    height: 1024px;
+    /*should be the same height as the images*/
 }
+
+.img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-comp-img img {
+    display: block;
+    vertical-align: middle;
+    max-width: none;
+
+}
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: #2196F3;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+/* ---------------------- Box End ----------------------  */
