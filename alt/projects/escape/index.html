@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,34 +15,38 @@
   <link rel="stylesheet" href="../../css/baguetteBox.css">
   <script src="../../js/imgcomparison.js"></script>
   <script src="../../js/baguetteBox.js"></script>
-  <style>
-    img {
-      max-width: none;
-    }
-  </style>
 </head>
 
-<header class="flex-container">
-  <nav>
-    <div class="box">
-      <button class="hamburger">☰</button>
-      <ul class="nav-menu">
-        <li> <a href="../../">Home</a></li>
-        <li> <a href="../../Artist-Statement/">Artist Statement</a></li>
-        <li> <a href="../../Portfolio/">Portfolio</a></li>
-        <li> <a href="../../Portfolio/#3d-work">3D Models</a></li>
-        <li> <a href="../../Portfolio/#2d-work">2D Works</a></li>
-        <li> <a href="../../Portfolio/#p5-work">P5 & Q5 Creations</a></li>
-        <li> <a href="../../Portfolio/#video-work">Videos & Animations</a></li>
-      </ul>
-    </div>
-  </nav>
-  <h1>
-    <a href="../../"><img src="../../img/branding.png" alt="Snowflake on a circle background"></a>
-  </h1>
-</header>
+<body>
+  <header class="flex-container">
+    <nav>
+      <div class="box">
+        <button class="hamburger">☰</button>
+        <ul class="nav-menu">
+          <li> <a href="../../">Home</a></li>
+          <li> <a href="../../Artist-Statement/">Artist Statement</a></li>
+          <li> <a href="../../Portfolio/">Portfolio</a></li>
+          <li> <a href="../../Portfolio/#3d-work">3D Models</a></li>
+          <li> <a href="../../Portfolio/#2d-work">2D Works</a></li>
+          <li> <a href="../../Portfolio/#p5-work">P5 & Q5 Creations</a></li>
+          <li> <a href="../../Portfolio/#video-work">Videos & Animations</a></li>
+          <li
+            style="color: var(--TextColor1); -webkit-text-stroke: 0.3rem var(--OutlineColor); text-decoration: none; display: block; margin: 0 1rem;">
+            <label class="switch">
+              <input type="checkbox" id="fontToggle">
+              <span class="slider round"></span>
+            </label>
+            Toggle Font
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1>
+      <a href="../../"><img src="../../img/branding.png" alt="Snowflake on a circle background"></a>
+    </h1>
+  </header>
 
-<main>
+
   </div>
   <section class="project-section">
     <div class="project-content">
@@ -59,7 +64,8 @@
             </div>
           </div>
           <p>
-            Created for my final for ART-75, a scene inspired heavily by point & click adventure games and the Windows 95 maze screensaver. <br>
+            Created for my final for ART-75, a scene inspired heavily by point & click adventure games and the Windows
+            95 maze screensaver. <br>
             <br>
 
             This was rendered out in Blender and has 2 versions: <br>
@@ -67,9 +73,11 @@
             <br>
             and another inspired by more modern rendering styles with lighting applied. <br>
             <br>
-            I tried to source accurate early-to-mid 90s stock textures, such as using the 90s era Rubik's Cube logo. <br>
+            I tried to source accurate early-to-mid 90s stock textures, such as using the 90s era Rubik's Cube logo.
+            <br>
             and the stone texture supplied with the windows 95 version of the 3D maze screensaver. <br>
-            The only exception were the things I made by hand, such as the Tuna Can, computer screen, and key. (Listed below) <br>
+            The only exception were the things I made by hand, such as the Tuna Can, computer screen, and key. (Listed
+            below) <br>
             <br>
           </p>
         </div>
@@ -107,7 +115,7 @@
       </p>
     </div>
   </section>
-</main>
+</body>
 <footer class="flex-container">
   <p>
     &copy;2026 Jordan/Kimberly Smith
@@ -117,6 +125,8 @@
     <a href="https://youtube.com/@RenimG"><img src="../../img/icon-logo-youtube.png" alt=""></a>
   </div>
 </footer>
+<script src="../../js/main.js"></script>
+<script src="../../js/nav.js"></script>
 <script>
   initComparisons();
   baguetteBox.run(".flex-container-grid", {

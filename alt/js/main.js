@@ -1,12 +1,29 @@
 const nameChange1 = document.querySelector("#name-change-jor");
 const nameChange2 = document.querySelector("#name-change-kim");
+const fontToggle = document.getElementById('fontToggle');
 
-nameChange1.addEventListener("click", () =>{
-    nameChange1.classList.add("hidden")
-    nameChange2.classList.remove("hidden")
-})
 
-nameChange2.addEventListener("click", () =>{
-    nameChange2.classList.add("hidden")
-    nameChange1.classList.remove("hidden")
-})
+fontToggle.addEventListener('change', function () {
+    if (this.checked) {
+        // Switch is turned ON -> Add alternate font class
+        document.body.classList.add('alt-font');
+    } else {
+        // Switch is turned OFF -> Remove alternate font class
+        document.body.classList.remove('alt-font');
+    }
+});
+
+const savedState = localStorage.getItem('toggleState');
+// 1. Load saved state from localStorage
+if (savedState === 'true') {
+    fontToggle.checked = true;
+    document.body.classList.add('alt-font');
+} else {
+    fontToggle.checked = false;
+    document.body.classList.remove('alt-font');
+}
+
+// 2. Save state to localStorage on change
+fontToggle.addEventListener('change', () => {
+    localStorage.setItem('toggleState', fontToggle.checked);
+});
